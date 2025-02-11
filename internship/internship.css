@@ -1,0 +1,334 @@
+ /* loader css */
+ #pre-loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000 url(/assits/g2.gif) no-repeat center;
+    z-index: 100;
+    top: 0%;
+    background-size: 15%;
+}
+ /* loader css */
+ 
+ /* Navbar Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .navbar {
+    background: #f8f9fa;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .nav-link-custom {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 15px;
+    margin: 6px;
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Important for hover effect */
+  }
+  
+  .nav-link-custom:hover {
+    color: #1dd746;
+    transform: translateY(-2px);
+  }
+  
+  /* ✅ Buttons Hover Animation */
+  .btn-custom {
+    background: #1dd746;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.3s;
+    position: relative; /* Important for hover effect */
+  }
+  
+  .btn-custom:hover {
+    background: #17b83c;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Smooth shadow effect */
+  }
+  
+  /* ✅ Responsive Fixes */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .d-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn-custom {
+      width: 100%;
+      margin-bottom:10px;
+  }
+  }
+      /* nav css end  */
+
+
+/* Internship Page Styles */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+/* Perfect Vertical Line */
+.feature-list::before {
+    content: "";
+    position: absolute;
+    left: 55px; /* Align with icons */
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: green;
+}
+.feature-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.feature-icon {
+    color: green;
+    font-size: 22px;
+    border: 2px solid green; /* Border around icon */
+    border-radius: 2px; /* Circular shape */
+    padding: 10px; /* Space inside the border */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 2;
+}
+.feature-text {
+    margin-left: 40px; /* Space between line and text */
+}
+.side-img{
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 300px;
+}
+.why{
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+
+    /* Default Card Styling */
+    .card-main{
+        margin-top: 130px;
+    }
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: 100%;
+        max-width: 300px; /* Prevent extra large cards */
+        text-align: center;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card h5 {
+        margin: 2px;
+    }
+        
+    .apply-btn {
+        /* background-color: #007BFF; */
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        width: 90%; /* Full width button on smaller screens */
+    }
+    
+    /* Hover Effects */
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 18, 0, 2);
+    }
+    
+    /* ✅ Responsive Design */
+    @media (max-width: 1024px) {
+        .card-container {
+            gap: 20px;
+        }
+        .card {
+            max-width: 250px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .card-container {
+            flex-direction: column; /* Single column on small screens */
+            align-items: center;
+        }
+        .card {
+            max-width: 90%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .card {
+            max-width: 95%;
+        }
+        .apply-btn {
+            width: 100%;
+        }
+    }
+    
+    /* internship cards */
+        /* what std are saying  */
+        .testimonials {
+            padding: 60px 20px;
+            margin-top: 3px;
+            /* background-color: #f8f9fa;  Light gray background instead of gradient */
+            margin-bottom: 3px;
+            background: #f8f9fa;
+          /* background: linear-gradient(90deg, rgb(68, 255, 154) -0.55%, rgb(68, 176, 255) 22.86%, rgb(139, 68, 255) 48.36%, rgb(255, 102, 68) 73.33%, rgb(235, 255, 112) 99.34%); */
+        }
+        
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .testimonials .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(90deg,
+                rgba(199, 255, 228, 0.5) 0%,
+                rgba(208, 223, 255, 0.5) 30%,
+                rgba(242, 223, 255, 0.5) 50%,
+                rgba(255, 223, 223, 0.5) 70%
+            );
+            border-radius: 19px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        /* Hover effects */
+        .testimonial-container:hover .testimonial-card {
+            filter: blur(3px);
+            transform: scale(0.95);
+            opacity: 0.7;
+        }
+        
+        .testimonial-container .testimonial-card:hover {
+            filter: blur(0);
+            transform: scale(1.05);
+            opacity: 1;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background: white;
+        }
+        
+        .testimonial-container .testimonial-card:hover::before {
+            opacity: 1;
+        }
+        
+        .testimonial-card .stars {
+            color: #ffd700;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-card .review {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+        
+        .testimonial-card .student-info h4 {
+            color: #333;
+            margin: 0;
+            font-size: 18px;
+        }
+        
+        .testimonial-card .student-info p {
+            color: #666;
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1100px) {
+            .testimonial-container {
+                flex-wrap: wrap;
+            }
+            
+            .testimonial-card {
+                width: calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .testimonial-card {
+                width: 100%;
+            }
+        }

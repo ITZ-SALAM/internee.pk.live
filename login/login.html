@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internee.pk - Login</title>
+    <!-- Link to login CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Main container for the login form -->
+    <div class="login-container">
+        <!-- Logo section -->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assits/topi.jpeg" alt="Internee.pk Logo">
+            </a>
+            <p class="subtitle">VIRTUAL INTERNSHIP PLATFORM</p>
+        </div>
+
+        <!-- Login form -->
+        <form id="loginForm" onsubmit="return validateForm(event)">
+            <!-- Email input field -->
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email">
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <!-- Password input field -->
+            <div class="form-group">
+                <div class="password-input">
+                    <input type="password" id="password" placeholder="Password">
+                    <!-- Toggle password visibility button -->
+                    <button type="button" id="togglePassword" class="toggle-password">
+                        👁️
+                    </button>
+                </div>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+
+            <!-- Remember me checkbox -->
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="sign-in-btn">Sign In</button>
+
+            <!-- Forgot password link -->
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+
+        <!-- Back to home link -->
+        <div class="back-to-home">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="login.js"></script>
+</body>
+</html> 

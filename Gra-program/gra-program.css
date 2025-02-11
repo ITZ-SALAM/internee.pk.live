@@ -1,0 +1,298 @@
+/* nav css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .navbar {
+    background: #f8f9fa;
+    /* border-radius: 10px; */
+    height: auto;
+    position: fixed !important;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .new-nav {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 15px;
+    margin: 6px;
+    transition: all 0.3s ease-in-out !important; 
+    position: relative;
+  }
+  
+  .new-nav:hover {
+    color: #1dd746 !important; 
+    /* transform: translateY(-2px); */
+    transform: translateY(-2px) !important;
+  }
+  
+  
+
+
+  /* ✅ Buttons Hover Animation */
+  .btn-custom {
+    background: #1dd746;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.3s;
+    position: relative; /* Important for hover effect */
+  }
+  
+  .btn-custom:hover {
+    background: #17b83c;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Smooth shadow effect */
+  }
+  
+  /* ✅ Responsive Fixes */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .d-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn-custom {
+      width: 100%;
+      margin-bottom:10px;
+  }
+  }
+/* nav css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+.hero-section {
+    padding: 80px 50px;
+    padding-left: 1px;
+}
+.hero-title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.bg-half{
+    display: inline-block;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+}
+.bg-half::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 20px;
+    background-color: #66ff99; /* Green highlight */
+    z-index: -1;
+}
+.hero-text {
+    font-weight: 500;
+    color: #555;
+    max-width: 500px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+/* Buttons Styling */
+.btn-orange {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  
+}
+.btn-orange:hover {
+    background-color: #cc5500;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-play {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-play:hover {
+    transform: translateY(-2px);
+}
+
+/* ✅ Buttons Styling */
+.btn-orange {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.btn-orange:hover {
+  background-color: #cc5500;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ✅ Play Button */
+.btn-play {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers content */
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Circular Play Button */
+.play-circle {
+  width: 45px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.play-circle i {
+  font-size: 20px;
+  color: black;
+}
+
+.btn-play:hover .play-circle {
+  background-color: black;
+  color: white;
+}
+
+.btn-play:hover .play-circle i {
+  color: white;
+}
+
+/* ✅ Responsive Button Alignment Fix */
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping */
+  justify-content: center; /* Centers buttons */
+  gap: 10px; /* Adds spacing */
+  margin-top: 20px;
+}
+
+/* ✅ Ensures buttons are responsive */
+.btn-orange,
+.btn-play {
+  width: auto;
+  min-width: 150px;
+  text-align: center;
+}
+
+/* ✅ Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+  .buttons-container {
+      flex-direction: column; /* Stack buttons */
+      align-items: center; /* Center align */
+  }
+
+  .btn-orange,
+  .btn-play {
+      width: 100%;
+      margin: 4px;
+      max-width: 250px;
+      border-radius: 5px;
+      border: 1px solid black;
+  }
+}
+
+/* ✅ Prevents unwanted scrollbars */
+@media (max-width: 576px) {
+  html, body {
+      overflow-x: hidden;
+  }
+}
+
+/* Circular Play Button */
+.play-circle {
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.play-circle i {
+    font-size: 20px;
+    color: black;
+}
+.btn-play:hover .play-circle {
+    background-color: black;
+    color: white;
+}
+.btn-play:hover .play-circle i {
+    color: white;
+}
+/* loader  */
+#pre-loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000 url(/assits/g2.gif) no-repeat center;
+    z-index: 100;
+    background-size: 15%;
+}
+/* loader */
+
+    /* footer sub btn */
+/* cards hover css */
+.card {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-9px);
+}
+
+/* cards hover css */

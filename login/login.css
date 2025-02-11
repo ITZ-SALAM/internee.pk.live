@@ -1,0 +1,157 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container styles */
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* width: 100%;
+    max-width: 400px; */
+    width: 25rem;
+    height: 37rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Logo styles */
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Input field styles */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Password input container */
+.password-input {
+    position: relative;
+}
+
+/* Toggle password button */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Remember me checkbox styles */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Sign in button styles */
+.sign-in-btn {
+    width: 100%;
+    padding: 12px;
+    background-color:#0056b3 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: green;
+}
+
+/* Forgot password link styles */
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Error message styles */
+.error-message {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+/* Invalid input highlight */
+input.invalid {
+    border-color: #dc3545;
+}
+
+/* Back to home link styles */
+.back-to-home {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.back-to-home a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-to-home a:hover {
+    color: green;
+} 

@@ -1,0 +1,371 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+      }
+      
+      /* loader  */
+      #pre-loader{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000 url(/assits/g2.gif) no-repeat center;
+        z-index: 100;
+        background-size: 15%;
+      }
+      /* loader */
+
+         /* Navbar Styles */
+      
+      .navbar {
+        background: #f8f9fa;
+        /* border-radius: 10px; */
+        height: auto;
+        position: fixed !important;
+        width: 100%;
+        top: 0px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .logo-img {
+        max-width: 100px;
+        height: auto;
+        
+      }
+      
+      .double-check {
+        text-decoration: none;
+        font-size: 16px;
+        color:#333;
+        padding: 8px 20px;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .double-check:hover {
+        color: #1dd746 !important;
+        transform: translateY(-2px);
+    }
+      
+      
+      .double-btn {
+        background: #1dd746;
+        color: white;
+        border-radius: 8px;
+        padding: 10px 20px;
+        border: none;
+        transition: 0.3s;
+        position: relative;
+        text-decoration: none;
+      }
+      
+      .double-btn:hover {
+        background: #17b83c;
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+    
+      @media (max-width: 992px) {
+        .navbar-nav {
+          text-align: center;
+          width: 100%;
+        }
+      
+        .nav-item {
+          margin-bottom: 10px;
+        }
+      
+        .d-flex {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .btn-custom {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+      
+      /* --------------------------------------------------
+         Contact Container & Overlay Styles
+      ----------------------------------------------------- */
+      .contact-container {
+        margin-top: 75px;
+        min-height: calc(100vh - 80px);
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                    url('../assits/contact-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 40px;
+      }
+      
+      .contact-overlay {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      
+      /* --------------------------------------------------
+         Contact Info Styles
+      ----------------------------------------------------- */
+      .contact-info {
+        flex: 1;
+        padding: 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .contact-info h2 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .contact-info p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      
+      .info-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 1.1em;
+      }
+      
+      .info-item span {
+        font-size: 1.2em;
+      }
+      
+      .info-item strong {
+        margin-right: 5px;
+      }
+      
+      .info-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .info-item ul li {
+        margin-bottom: 5px;
+      }
+      
+      .get-in-touch-btn {
+        background-color: #0F5132;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 8px;
+        font-size: 1.1em;
+        cursor: pointer;
+        width: fit-content;
+        margin-top: 20px;
+      }
+      
+      .get-in-touch-btn:hover {
+        background-color: #0c4128;
+      }
+      
+      /* Social Links */
+      .social-links {
+        margin-top: 40px;
+      }
+      
+      .social-links h3 {
+        margin-bottom: 15px;
+      }
+      
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+      
+      .social-icons a {
+        color: white;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+      
+      .social-icons a:hover {
+        color: #4CAF50;
+      }
+      
+      /* --------------------------------------------------
+         Contact Form Styles
+      ----------------------------------------------------- */
+      .contact-form {
+        flex: 1;
+        padding: 40px;
+        background-color: rgba(26, 26, 26, 0.95);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        color: white;
+        max-width: 500px;
+      }
+      
+      .contact-form h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      
+      .contact-form > p {
+        color: #cccccc;
+        margin-bottom: 30px;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: white;
+      }
+      
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+      }
+      
+      .form-group textarea {
+        height: 150px;
+        resize: vertical;
+      }
+      
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #4CAF50;
+      }
+      
+      .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s;
+      }
+      
+      .submit-btn:hover {
+        background-color: #45a049;
+      }
+      
+      .error-message {
+        color: #ff4444;
+        font-size: 14px;
+        margin-top: 5px;
+        display: none;
+      }
+      
+      @media (max-width: 768px) {
+        .contact-overlay {
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+        }
+      
+        .contact-info,
+        .contact-form {
+          padding: 20px;
+        }
+      
+        .contact-info h2 {
+          font-size: 2.5em;
+        }
+      
+        .contact-info p,
+        .contact-form p {
+          font-size: 1em;
+        }
+      
+        
+        .navbar-nav {
+          flex-direction: column;
+        }
+      }
+      
+
+      
+      @media (max-width: 576px) {
+        .contact-container {
+          padding: 20px;
+        }
+      
+        .contact-overlay {
+          gap: 10px;
+        }
+      
+        .contact-info h2 {
+          font-size: 2em;
+        }
+      
+        .contact-info p,
+        .contact-form p {
+          font-size: 0.9em;
+        }
+      
+        .info-details {
+          font-size: 0.9em;
+        }
+      
+        .get-in-touch-btn {
+          padding: 10px 20px;
+          font-size: 1em;
+        }
+      
+        .contact-form {
+          padding: 20px;
+        }
+      
+        .form-group input,
+        .form-group textarea {
+          padding: 10px;
+          font-size: 0.9em;
+        }
+      
+        .submit-btn {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      
+        /* Adjust navbar link padding on very small screens */
+        .nav-link-custom {
+          padding: 6px 10px;
+          font-size: 14px;
+        }
+      }

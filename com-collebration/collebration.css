@@ -1,0 +1,508 @@
+    /* loader */
+    #pre-loader{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #000 url(/assits/g2.gif) no-repeat center;
+        z-index: 100;
+        background-size: 15%;
+        top: 0%;
+        align-items: center;
+    }
+    /* loader */
+            /* nav css */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+             .navbar {
+                background: #f8f9fa;
+                /* border-radius: 10px; */
+                height: auto;
+                position: fixed;
+                width: 100%;
+                top: 0px;
+                z-index: 1000;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              }
+              
+              .logo-img {
+                max-width: 100px;
+                height: auto;
+              }
+              
+              .nav-link-custom {
+                text-decoration: none;
+                font-size: 16px;
+                color: #333;
+                font-weight: 500;
+                padding: 8px 15px;
+                margin: 6px;
+                transition: all 0.3s ease-in-out;
+                position: relative; /* Important for hover effect */
+              }
+              
+              .nav-link-custom:hover {
+                color: #1dd746;
+                transform: translateY(-2px);
+              }
+              
+              /* ✅ Buttons Hover Animation */
+              .btn-custom {
+                background: #1dd746;
+                color: white;
+                border-radius: 8px;
+                padding: 10px 20px;
+                border: none;
+                transition: 0.3s;
+                position: relative; /* Important for hover effect */
+              }
+              
+              .btn-custom:hover {
+                background: #17b83c;
+                transform: translateY(-2px);
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Smooth shadow effect */
+              }
+              
+              /* ✅ Responsive Fixes */
+              @media (max-width: 992px) {
+                .navbar-nav {
+                  text-align: center;
+                  width: 100%;
+                }
+              
+                .nav-item {
+                  margin-bottom: 10px;
+                }
+              
+                .d-flex {
+                  flex-direction: column;
+                  align-items: center;
+                }
+              
+                .btn-custom {
+                  width: 100%;
+                  margin-bottom:10px;
+              }
+              }
+              
+        /* nav css */
+/* main  */
+.icon-box {
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 6px;
+}
+.icon-box:hover {
+    background: #e8f5e9;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.icon-box i {
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+.h-d {
+    color: black;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    width: 100%;
+}
+.para {
+    color: #6c757d;
+    margin-bottom: 2rem;
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: rgb(113 114 117 / var(--tw-text-opacity));
+    width: auto;
+    margin-left: 100px;
+}
+@media (max-width: 768px) {
+  .para {
+      width: 90%; /* Adjust width for smaller screens */
+    margin-left: 25px;
+
+  }
+}
+.coll-main{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 60px;
+
+}
+/* main */
+
+
+
+    /* how it works css */
+    .step-container {
+        text-align: center;
+        position: relative;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .step-line {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background: transparent;
+        z-index: -1;
+        display: flex;
+        justify-content: space-between;
+    }
+    .step-line i {
+        font-size: 24px;
+        color: #1dd746;
+    }
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .step-circle {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border: 3px solid #1dd746;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        position: relative;
+    }
+
+    @media (max-width: 768px) {
+        .step-line { display: none; }
+    }
+    /* how it works css */
+    /* contact foam css */
+      /* --------------------------------------------------
+         Contact Container & Overlay Styles
+      ----------------------------------------------------- */
+      .contact-container {
+        margin-top: 0;
+        min-height: calc(100vh - 80px);
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                    url('../assits/contact-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 40px;
+      }
+      
+      .contact-overlay {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      
+      /* --------------------------------------------------
+         Contact Info Styles
+      ----------------------------------------------------- */
+      .contact-info {
+        flex: 1;
+        padding: 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .contact-info h2 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .contact-info p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      
+      .info-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 1.1em;
+      }
+      
+      .info-item span {
+        font-size: 1.2em;
+      }
+      
+      .info-item strong {
+        margin-right: 5px;
+      }
+      
+      .info-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .info-item ul li {
+        margin-bottom: 5px;
+      }
+      
+      .get-in-touch-btn {
+        background-color: #0F5132;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 8px;
+        font-size: 1.1em;
+        cursor: pointer;
+        width: fit-content;
+        margin-top: 20px;
+      }
+      
+      .get-in-touch-btn:hover {
+        background-color: #0c4128;
+      }
+      
+      /* Social Links */
+      .social-links {
+        margin-top: 40px;
+      }
+      
+      .social-links h3 {
+        margin-bottom: 15px;
+      }
+      
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+      
+      .social-icons a {
+        color: white;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+      
+      .social-icons a:hover {
+        color: #4CAF50;
+      }
+      
+      /* --------------------------------------------------
+         Contact Form Styles
+      ----------------------------------------------------- */
+      .contact-form {
+        flex: 1;
+        padding: 40px;
+        background-color: rgba(26, 26, 26, 0.95);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        color: white;
+        max-width: 500px;
+      }
+      
+      .contact-form h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      
+      .contact-form > p {
+        color: #cccccc;
+        margin-bottom: 30px;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: white;
+      }
+      
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+      }
+      
+      .form-group textarea {
+        height: 150px;
+        resize: vertical;
+      }
+      
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #4CAF50;
+      }
+      
+      .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s;
+      }
+      
+      .submit-btn:hover {
+        background-color: #45a049;
+      }
+      
+      .error-message {
+        color: #ff4444;
+        font-size: 14px;
+        margin-top: 5px;
+        display: none;
+      }
+      
+      @media (max-width: 768px) {
+        .contact-overlay {
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+        }
+      
+        .contact-info,
+        .contact-form {
+          padding: 20px;
+        }
+      
+        .contact-info h2 {
+          font-size: 2.5em;
+        }
+      
+        .contact-info p,
+        .contact-form p {
+          font-size: 1em;
+        }
+      
+        
+        .navbar-nav {
+          flex-direction: column;
+        }
+      }
+      
+
+      
+      @media (max-width: 576px) {
+        .contact-container {
+          padding: 20px;
+        }
+      
+        .contact-overlay {
+          gap: 10px;
+        }
+      
+        .contact-info h2 {
+          font-size: 2em;
+        }
+      
+        .contact-info p,
+        .contact-form p {
+          font-size: 0.9em;
+        }
+      
+        .info-details {
+          font-size: 0.9em;
+        }
+      
+        .get-in-touch-btn {
+          padding: 10px 20px;
+          font-size: 1em;
+        }
+      
+        .contact-form {
+          padding: 20px;
+        }
+      
+        .form-group input,
+        .form-group textarea {
+          padding: 10px;
+          font-size: 0.9em;
+        }
+      
+        .submit-btn {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      
+        /* Adjust navbar link padding on very small screens */
+        .nav-link-custom {
+          padding: 6px 10px;
+          font-size: 14px;
+        }
+      }
+    /* contact foam css */
+
+        /* footer sub btn */
+        .custom-btn{
+          background: #1dd746;
+          color: black;
+          border-radius: 4px;
+          padding: 8px 20px;
+          transition: 0.3s;
+          height: 100%;
+          width: 100%;
+          
+        }
+        
+        .custom-btn:hover {
+          background:#17b83c;
+          color: white;
+        }
+      /* footer sub btn */
+
+      /* Prevent Horizontal Scroll */
+ 
+      html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ensure Containers Don't Exceed Width */
+.container, .row {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; /* Keep some padding for alignment */
+}
+
+/* Fix Full-Width Elements */
+.navbar, .step-line, .contact-container {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* Fix Step Line Width */
+.step-line {
+  width: calc(100% - 40px);
+} 
+
